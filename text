@@ -1,0 +1,38 @@
+
+
+
+//flow cart
+
+// routing => (path, function)
+// method get = mendapatkan
+// method post = menambahkan
+
+
+// ketika path atau npoint berjalan atau diakses, maka fungsinya akan dijalankan contohnya :
+
+// e.GET('/', home)
+// ketika npoint '/' sedang berjalan atau sedang diakses maka npoint akan menjalankan fungsi home.
+
+// parameter Context => untuk menyediakan request dan response sekaligus
+// request adalah permintaan dari sisi client ke server,
+// sedangkan response adalah server yg menerima dan memberikan hasil dari permintaan client,
+// contohnya :
+// ketika client mengklik delete pada suatu card (request ke server) maka proses dibalik layar adalah client meminta server untuk mendelete card tersebut. dan si server akan melakukan delete pada card tersebut(response ke client)
+
+// variabel error untuk menampung blok code jika ada kesalahan data atau data yg error
+
+// method query = method dari package pgx berguna untuk meminta atau mengirimkan request ke database, digunakan jika hanya untuk menampilkan data dari database di dalam golang contohnya kita meminta data seluruh property yg ada di database maka kita perlu memanggilnya dengan method SELECT, Sedangkan
+// method Exect => method dari package pgx berguna untuk menghapus data, menambahkan data, mengupdate data.
+
+// context.Background() => agar ketika kita menggunakan request maka latar belakangnya akan tetap terhubung selama aplikasinya sedang berjalan.
+// variabel Conn didalam file direktory connection harus mempointing pgx.Conn agar bisa menggunakan method2 atau fungsi yg sudah disediakan oleh package dari si pgx
+
+// method Next() => digunakan untuk mengeksekusi perbaris data, Next akan membaca data yg ada didatabase secara perbaris
+
+// method Scan => membaca data atau property dari database yg ada didalam varibel lalu dikembalikan/dilempar ke dalam variabel object
+
+// method JSON atau Javascript Object Notation => format data ketika mengirimkan sebuah pesan dari server ke client
+// method append => menambahkan variabel object kedalam variabel array yg akan menjadi variabel array of object karna sudah ditambahkan dengan method append dari si variabel object tersebut.
+
+// interface => menyimpan semua tipe data
+
